@@ -2,9 +2,9 @@ header {
   height: 400px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #ff69b4;
   background-image: url("https://www.transparenttextures.com/patterns/white-diamond.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
