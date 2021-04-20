@@ -18,8 +18,24 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font: 24px Source Sans Pro, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  background-color: green;
+  width: 90%;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.main-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
