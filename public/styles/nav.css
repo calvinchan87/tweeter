@@ -5,11 +5,13 @@ nav {
   color: #FFFFFF;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  top: 0px;
 }
 
 span {
   font: 24px Bungee, serif;
-  margin: 1.5em
+  margin: 1.5em;
 }
 
 .nav-right {
@@ -25,5 +27,5 @@ span {
 
 .fa-angle-double-down {
   margin-right: 1.5em;
-  color: red
+  color: red;
 }
