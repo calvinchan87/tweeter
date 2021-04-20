@@ -1,0 +1,28 @@
+textarea {
+  width: 100%;
+  font: 18px Source Sans Pro bold, sans-serif;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid #545149;
+  resize: none;
+}
+
+.main-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font: 24px Bungee, serif;
+}
+
+button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  border: 0;
+  outline: 0;
+}
+
+label {
+  display: flex;
+  margin-top: 1em;
+}

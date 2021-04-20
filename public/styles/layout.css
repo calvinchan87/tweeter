@@ -27,15 +27,8 @@ body {
  */
 
 main {
-  background-color: green;
   width: 90%;
   display: flex;
   align-self: center;
   flex-direction: column;
-}
-
-.main-action {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
