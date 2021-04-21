@@ -1,0 +1,69 @@
+.past-tweet {
+  background-color: bisque;
+  border: 3px solid #545149;
+  transition: 0.3s;
+}
+
+.past-tweet:hover {
+  box-shadow: 5px 5px lightsteelblue;
+  transition: 0.3s;
+}
+
+.tweet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.tweet-header-left {
+  display: flex;
+}
+
+.fa-user-circle {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.real-name {
+  padding-top: 20px;
+  font-weight: 300;
+}
+
+.handle {
+  padding-top: 20px;
+  padding-right: 10px;
+  color: lightsteelblue;
+}
+
+.tweet-article {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 3px solid #545149;
+  font-size: 16px;
+}
+
+.fa-flag:hover {
+  color: hotpink;
+  transition: 0.3s;
+}
+
+.fa-retweet:hover {
+  color: hotpink;
+  transition: 0.3s;
+}
+
+.fa-heart:hover {
+  color: hotpink;
+  transition: 0.3s;
+}

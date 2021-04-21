@@ -1,10 +1,11 @@
 textarea {
   width: 100%;
-  font: 18px Source Sans Pro bold, sans-serif;
+  font: 18px Source Sans Pro, sans-serif;
   background-color: transparent;
   border: 0;
   outline: 0;
   border-bottom: 3px solid #545149;
+  color: #545149;
   resize: none;
 }
 
@@ -20,6 +21,7 @@ button {
   color: #FFFFFF;
   border: 0;
   outline: 0;
+  padding: 10px;
 }
 
 label {
@@ -29,4 +31,5 @@ label {
 
 .counter {
   color: hotpink;
+  margin-top: 10px;
 }
