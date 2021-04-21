@@ -1,5 +1,5 @@
 .past-tweet {
-  background-color: bisque;
+  background: rgba(255, 105, 180, 0.1);
   border: 3px solid #545149;
   transition: 0.3s;
 }
@@ -21,7 +21,7 @@
 }
 
 .fa-user-circle {
-  font-size: 50px;
+  font-size: 66px;
   padding: 10px;
 }
 
