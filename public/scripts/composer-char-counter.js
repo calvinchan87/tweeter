@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  console.log("Document loaded OK");
+  console.log("Counter loading now");
 
   const textArea = document.getElementById('tweet-text');
 

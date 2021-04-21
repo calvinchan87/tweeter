@@ -6,7 +6,7 @@
 
 $(document).ready(function() {
 
-  console.log("Timeago loaded OK");
+  console.log("renderTweets and Timeago loading now");
 
   // Fake data taken from initial-tweets.json
   const data = [
