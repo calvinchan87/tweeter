@@ -26,3 +26,7 @@ label {
   display: flex;
   margin-top: 1em;
 }
+
+.counter {
+  color: hotpink;
+}
