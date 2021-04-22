@@ -8,15 +8,21 @@ $(document).ready(function() {
 
   $form.on('submit', function(event) {
     event.preventDefault();
-    console.log('Tweet submitted, performing ajax call...');
     let dataString = $(this).serialize();
-    console.log(dataString);
+    const $counter = $('.counter');
+    if (parseInt($counter[0].innerText) === 140) {
+      return alert("This tweet is empty and can not be tweeted.")
+    }
+    if (parseInt($counter[0].innerText) < 0) {
+      return alert("This tweet is over 140 characters and can not be tweeted.")
+    }
+    console.log('Tweet submitted, performing ajax call...');
     $.ajax({
       type: "POST",
       url: '/tweets',
       data: dataString,
       dataType: 'text',
-      success: function() { // argument required?
+      success: function() {
         console.log('Success: data sent');
       },
       error: function() {
