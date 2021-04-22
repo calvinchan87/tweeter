@@ -10,10 +10,10 @@ $(document).ready(function() {
     let dataString = $(this).serialize();
     const $counter = $('.counter');
     if (parseInt($counter[0].innerText) === 140) { // correct key?
-      return alert("This tweet is empty and can not be tweeted.")
+      return alert("This tweet is empty and can not be tweeted.");
     }
     if (parseInt($counter[0].innerText) < 0) { // correct key?
-      return alert("This tweet is over 140 characters and can not be tweeted.")
+      return alert("This tweet is over 140 characters and can not be tweeted.");
     }
     console.log('Tweet submitted, performing ajax call...');
     $.ajax({
@@ -22,13 +22,13 @@ $(document).ready(function() {
       data: dataString,
       dataType: 'text',
       success: function() {
-        console.log('Success: data sent');
-        loadTweets(); // wrong function call
+        console.log('Success: data sent to database');
+        loadTweets(); // wrong function call, see client.js
       },
       error: function() {
         console.log('Error: handling required');
       }
-    })
+    });
 
   });
 });
