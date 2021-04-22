@@ -26,7 +26,7 @@ const createTweetElement = function(tweet) {
       </div>
       <div class="handle"><b>${tweet.user.handle}</b></div>
     </div>
-    <div class="tweet-article">${tweet.content.text}</div>
+    <div class="tweet-article">${escape(tweet.content.text)}</div>
     <div class="tweet-footer">
       <div class="time need_to_be_rendered" datetime="${tweet.created_at}">Placeholder Time</div>
       <!-- jQuery attr() Method: Display the time passed since a tweet was created in the lower-left corner of each Tweet. -->
@@ -66,6 +66,12 @@ const loadNewestTweet = function() {
     .catch(err => {
       console.log('Error caught: ', err);
     });
+};
+
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
 };
 
 $(document).ready(function() {
