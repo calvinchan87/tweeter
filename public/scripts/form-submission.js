@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // create an AJAX POST request in client.js that sends the form data to the server.
 
   console.log("Form submission listener loading now");
 
@@ -12,7 +11,7 @@ $(document).ready(function() {
     if (parseInt($counter[0].innerText) === 140) { // correct key?
       return alert("This tweet is empty and can not be tweeted.");
     }
-    if (parseInt($counter[0].innerText) < 0) { // correct key?
+    if (parseInt($counter[0].innerText) < 0) {
       return alert("This tweet is over 140 characters and can not be tweeted.");
     }
     console.log('Tweet submitted, performing ajax call...');

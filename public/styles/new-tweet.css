@@ -1,3 +1,9 @@
+.error {
+  font: 18px Source Sans Pro, sans-serif;
+  color: red;
+  margin: 0;
+}
+
 textarea {
   width: 100%;
   font: 18px Source Sans Pro, sans-serif;

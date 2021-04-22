@@ -76,24 +76,24 @@ const escape = function (str) {
 
 $(document).ready(function() {
 
+  $('.error').hide(); // Minor: should use jQuery to insert the error message text into the error element
   loadTweets();
-
-  // create an AJAX POST request in client.js that sends the form data to the server.
 
   console.log("Form submission listener loading now");
 
-  const $form = $('#tweet-form'); // ideally export this module
+  const $form = $('#tweet-form'); // Minor: ideally export this module
 
   $form.on('submit', function(event) {
     event.preventDefault();
-    let dataString = $(this).serialize();
+    let dataString = $(this).serialize();  
     const $counter = $('.counter');
-    if (parseInt($counter[0].innerText) === 140) { // correct key?
-      return alert("This tweet is empty and can not be tweeted.");
+    if (parseInt($counter[0].innerText) === 140) { // Minor: correct key?
+      return $('.error').slideDown();
     }
-    if (parseInt($counter[0].innerText) < 0) { // correct key?
-      return alert("This tweet is over 140 characters and can not be tweeted.");
+    if (parseInt($counter[0].innerText) < 0) {
+      return $('.error').slideDown();
     }
+    $('.error').slideUp();
     console.log('Tweet submitted, performing ajax call...');
     $.ajax({
       type: "POST",
@@ -102,7 +102,7 @@ $(document).ready(function() {
       dataType: 'text',
       success: function() {
         console.log('Success: data sent to database');
-        loadNewestTweet();
+        loadNewestTweet(); // correct function call, see form-submission.js
       },
       error: function() {
         console.log('Error: handling required');
