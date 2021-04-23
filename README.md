@@ -18,3 +18,8 @@ Build upon starter code to practice HTML, CSS, JS, jQuery and AJAX front-end ski
 - MD5
 - Node 5.10.x or above
 - Timeago
+
+## Screenshots
+
+!["Screenshot of desktop view (responsive design)"](https://github.com/calvinchan87/tweeter/blob/master/docs/tweeter-desktop-view.png?raw=true)
+!["Screenshot of mobile view (responsive design)"](https://github.com/calvinchan87/tweeter/blob/master/docs/tweeter-mobile-view.png?raw=true)
