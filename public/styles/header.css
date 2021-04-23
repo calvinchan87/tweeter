@@ -16,3 +16,10 @@ header {
 .profile-name {
   font: 36px Source Sans Pro, sans-serif;
 }
+
+@media (min-width: 1024px) {
+  header {
+    margin-left: 40px;
+    margin-top: 180px;
+  }
+}

@@ -1,12 +1,18 @@
 nav {
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
+  background-color: transparent;
   color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0px;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+  }
 }
 
 span {
@@ -28,4 +34,21 @@ span {
 .fa-angle-double-down {
   margin-right: 1.5em;
   color: hotpink;
+  animation: pulse 1s linear infinite;
+}
+
+/* From Codepen */
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }

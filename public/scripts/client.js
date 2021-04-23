@@ -39,7 +39,7 @@ const createTweetElement = function(tweet) {
   </article>
   <br>
   `;
-  return $tweet;
+  return $tweet; // Minor: Flag, retweet, and heart should change state on click
 };
 
 const loadTweets = function() {

@@ -32,3 +32,15 @@ main {
   align-self: center;
   flex-direction: column;
 }
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main {
+    margin-top: 110px;
+    padding: 40px;
+  }
+}
