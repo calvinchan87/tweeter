@@ -37,7 +37,7 @@ span {
   animation: pulse 1s linear infinite;
 }
 
-/* From Codepen */
+/* From Codepen https://codepen.io/ITpresent/pen/mdbPJLO */
 @keyframes pulse {
   0% {
     -webkit-transform: scale(1.1);

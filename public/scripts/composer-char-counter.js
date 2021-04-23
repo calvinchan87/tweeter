@@ -1,16 +1,14 @@
 $(document).ready(function() {
-  // --- our code goes here ---
+
   console.log("Counter loading now");
 
   const textArea = document.getElementById('tweet-text');
 
   $(textArea).on('input', function() {
     let count = 140 - $(this).val().length;
-    // console.log(count);
     let counter = this.nextElementSibling.querySelector(".counter");
-    // console.log(counter);
+    // Update counter with 'characters remaining' value in real time
     $(counter).val(count);
-    // console.log(counter);
     if (count < 0) {
       $(counter).css("color", "red");
     }
